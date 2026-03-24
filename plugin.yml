@@ -1,0 +1,25 @@
+name: WarpUI
+main: WarpUI\Main
+version: 1.1.0
+api: 5.0.0
+author: riseR
+description: A UI-based warp plugin with in-game creation.
+
+commands:
+  warp:
+    description: "Open the warp selection menu"
+    usage: "/warp"
+    permission: warpui.command.warp
+  setwarp:
+    description: "Create a new warp point"
+    usage: "/setwarp <name>"
+    permission: warpui.command.setwarp
+
+permissions:
+  warpui.command.warp:
+    description: "Allows players to use the /warp command"
+    default: true
+  warpui.command.setwarp:
+    description: "Allows admins to create warps"
+    default: op
+
